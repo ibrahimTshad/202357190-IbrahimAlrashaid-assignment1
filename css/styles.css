@@ -1,0 +1,104 @@
+:root {
+    --bg: #ffffff;
+    --text: #111827;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --card: #f9fafb;
+    --transition-fast: 180ms;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --bg: #0b1220;
+    --text: #e6eef8;
+    --muted: #9aa6b2;
+    --primary: #60a5fa;
+    --card: #071024;
+}
+/* reduce space below image and tighten heading/paragraph spacing */
+.project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.08rem; /* make smaller to bring text closer */
+    object-fit: cover;
+}
+
+.project-card .project-card-content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+    .project-card .project-card-content h3 {
+        margin: 0 0 0.12rem 0; /* tighten heading bottom margin */
+        line-height: 1.12;
+    }
+
+    .project-card .project-card-content p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+    }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-image {
+    display: block;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.project-card-content h3 {
+    margin-top: 0;
+}
+
+.project-card-content {
+    padding: 1rem;
+}
+
+
+
+html, body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color var(--transition-fast) ease, color var(--transition-fast) ease;
+}
+
+/* Theme-toggle button */
+#theme-toggle {
+    background: none;
+    border: 1px solid rgba(0,0,0,0.08);
+    color: var(--text);
+    padding: 0.4rem 0.65rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+    #theme-toggle[aria-pressed="true"] {
+        border-color: var(--primary);
+        background-color: rgba(99,102,241,0.08);
+    }
+
+/* Subtle adjustments for containers/cards */
+.site-header, .site-footer, .project-card {
+    background-color: var(--card);
+    transition: background-color var(--transition-fast);
+}
+
+/* Links */
+a {
+    color: var(--primary);
+}
