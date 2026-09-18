@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of ibrahim alrashaid, a student and aspiring web developer.">
+    <title>ibrahim alrashaid | Portfolio</title>
+
+    <!-- Website styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">Ibrahim Alrashaid</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+                Dark mode
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section id="home" class="hero">
+            <p class="eyebrow">Hello, my name is</p>
+            <h1>ibrahim alrashaid</h1>
+            <p class="tagline">Computer Science student and aspiring web developer.</p>
+            <a class="button" href="#projects">View my projects</a>
+        </section>
+
+        <!-- About Me: replace this text with your own information -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Get to know me</p>
+                <h2>About Me</h2>
+            </div>
+
+           
+               
+
+                <div>
+                    <p>
+                        I am a student interested in technology, programming, and web development.
+                        I enjoy learning new skills and turning ideas into useful digital projects.
+                    </p>
+                    <p>
+                        My current goal is to improve my HTML, CSS, and JavaScript skills while
+                        building a professional portfolio.
+                    </p>
+               
+            </div>
+        </section>
+
+        <!-- Projects: include at least two projects -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">What I have built</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="assets/images/cpu.png"
+                         alt="Five-stage pipelined CPU project"
+                         class="project-image">
+
+                    <div class="project-card-content">
+                        <h3>Five-Stage Pipelined CPU</h3>
+                        <p>
+                            I designed a simple five-stage pipelined CPU for my Computer
+                            Organization course. It was implemented using Verilog and
+                            Logisim and supports a basic instruction set.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/images/track.jpeg"
+                         alt="Assignment tracker interface"
+                         class="project-image">
+
+                    <div class="project-card-content">
+                        <h3>Assignment Tracker</h3>
+                        <p>
+                            I designed an assignment tracker for students and teachers
+                            during my Software Engineering course. The Figma prototype
+                            helps students track deadlines while teachers monitor progress.
+                        </p>
+                    </div>
+                </article>
+            </div>
+</section>
+
+        <!-- Contact form: a backend is not required for this assignment -->
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Let us connect</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Send message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Ibrahim Alrashaid. All rights reserved.</p>
+        <p><a href="https://github.com/ibrahimTshad">GitHub</a></p>
+    </footer>
+
+    <!-- Website interactions -->
+    <script src="js/script.js"></script>
+</body>
+</html>
